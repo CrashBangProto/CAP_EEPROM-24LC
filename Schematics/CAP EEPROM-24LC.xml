@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>E:/OneDrive/KiCad Projects/Toadstool/CAP EEPROM-24LC/Schematics/CAP EEPROM-24LC.sch</source>
+    <date>15/05/2015 20:50:27</date>
+    <tool>Eeschema (2015-04-22 BZR 5620)-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Toadstool Cap - EEPROM 24LC</title>
+        <company>Crash-Bang Prototyping</company>
+        <rev>0.2</rev>
+        <date/>
+        <source>CAP EEPROM-24LC.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="K2">
+      <value>CAP_CONN_RHS</value>
+      <footprint>Toadstool:Socket_Strip_Stackable_1x06</footprint>
+      <fields>
+        <field name="Manufacturer">Samtec</field>
+        <field name="Mfg_Part_No">ESQ-106-13-L-S</field>
+        <field name="Mfg_Package_Suffix">-</field>
+        <field name="Alt_Manufacturer">4UConn</field>
+        <field name="Alt_Mfg_Part_No">15198</field>
+        <field name="Alt_Mfg_Package_Suffix">-</field>
+      </fields>
+      <libsource lib="toadstool" part="CAP_CONN_RHS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5511B5B6</tstamp>
+    </comp>
+    <comp ref="K1">
+      <value>CAP_CONN_LHS</value>
+      <footprint>Toadstool:Socket_Strip_Stackable_1x06</footprint>
+      <fields>
+        <field name="Manufacturer">Samtec</field>
+        <field name="Mfg_Part_No">ESQ-106-13-L-S</field>
+        <field name="Mfg_Package_Suffix">-</field>
+        <field name="Alt_Manufacturer">4UConn</field>
+        <field name="Alt_Mfg_Part_No">15198</field>
+        <field name="Alt_Mfg_Package_Suffix">-</field>
+      </fields>
+      <libsource lib="toadstool" part="CAP_CONN_LHS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5511B90D</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>24LC128</value>
+      <footprint>Toadstool:SOIJ-8_5.3x5.3mm_Pitch1.27mm</footprint>
+      <fields>
+        <field name="Manufacturer">Microchip</field>
+        <field name="Mfg_Part_No">24LC128</field>
+        <field name="Mfg_Package_Suffix">-I/SN</field>
+      </fields>
+      <libsource lib="toadstool" part="24LC128"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55327C19</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Mfg_Part_No">RC0805JR-0710KL</field>
+        <field name="Mfg_Package_Suffix">-</field>
+        <field name="Alt_Manufacturer">TE Connectivity</field>
+        <field name="Alt_Mfg_Part_No">CRG0805F10K</field>
+        <field name="Alt_Mfg_Package_Suffix">-</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55327DE3</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>A2_SEL</value>
+      <footprint>Toadstool:Pin_Header_Straight_1x03</footprint>
+      <fields>
+        <field name="Manufacturer">Harwin</field>
+        <field name="Mfg_Part_No">M20-9990346</field>
+        <field name="Mfg_Package_Suffix">-</field>
+        <field name="Alt_Manufacturer">Wurth Electronics Inc</field>
+        <field name="Alt_Mfg_Part_No">61300311121</field>
+        <field name="Alt_Mfg_Package_Suffix">-</field>
+      </fields>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55327E0E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Mfg_Part_No">RC0805JR-0710KL</field>
+        <field name="Mfg_Package_Suffix">-</field>
+        <field name="Alt_Manufacturer">TE Connectivity</field>
+        <field name="Alt_Mfg_Part_No">CRG0805F10K</field>
+        <field name="Alt_Mfg_Package_Suffix">-</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>553290E0</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="toadstool" part="24LC128">
+      <aliases>
+        <alias>24AA128</alias>
+        <alias>24FC128</alias>
+      </aliases>
+      <description>24LC128</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">24LC128</field>
+        <field name="Footprint">DIP8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="VSS" type="power_in"/>
+        <pin num="5" name="SDA" type="input"/>
+        <pin num="6" name="SCL" type="BiDi"/>
+        <pin num="7" name="WP" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="toadstool" part="CAP_CONN_LHS">
+      <description>Toadstool Cap Connector (Left)</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X06</fp>
+        <fp>Socket_Strip_Straight_1X06</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">CAP_CONN_LHS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MISO" type="BiDi"/>
+        <pin num="2" name="SCK" type="BiDi"/>
+        <pin num="3" name="SS2" type="BiDi"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="TXD" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="toadstool" part="CAP_CONN_RHS">
+      <description>Toadstool Cap Connector (Right)</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X06</fp>
+        <fp>Socket_Strip_Straight_1X06</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">CAP_CONN_RHS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MOSI" type="BiDi"/>
+        <pin num="2" name="SS1" type="BiDi"/>
+        <pin num="3" name="~RESET" type="BiDi"/>
+        <pin num="4" name="VCC" type="power_out"/>
+        <pin num="5" name="SCL" type="BiDi"/>
+        <pin num="6" name="RXD" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\KiCad\kicad\share\library\device.lib</uri>
+    </library>
+    <library logical="toadstool">
+      <uri>E:\OneDrive\KiCad Projects\Toadstool\Library\toadstool.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\KiCad\kicad\share\library\conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="VCC">
+      <node ref="K2" pin="4"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="IC1" pin="8"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="P1" pin="3"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="2" name="/SCL">
+      <node ref="R2" pin="2"/>
+      <node ref="IC1" pin="6"/>
+      <node ref="K2" pin="5"/>
+    </net>
+    <net code="3" name="/SDA">
+      <node ref="K1" pin="5"/>
+      <node ref="IC1" pin="5"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(K1-Pad1)">
+      <node ref="K1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(K1-Pad2)">
+      <node ref="K1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(K1-Pad3)">
+      <node ref="K1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(K2-Pad2)">
+      <node ref="K2" pin="2"/>
+    </net>
+    <net code="8" name="Net-(K2-Pad1)">
+      <node ref="K2" pin="1"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="10" name="GND">
+      <node ref="IC1" pin="7"/>
+      <node ref="P1" pin="1"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="K1" pin="4"/>
+    </net>
+    <net code="11" name="Net-(K1-Pad6)">
+      <node ref="K1" pin="6"/>
+    </net>
+    <net code="12" name="Net-(K2-Pad6)">
+      <node ref="K2" pin="6"/>
+    </net>
+    <net code="13" name="Net-(K2-Pad3)">
+      <node ref="K2" pin="3"/>
+    </net>
+  </nets>
+</export>

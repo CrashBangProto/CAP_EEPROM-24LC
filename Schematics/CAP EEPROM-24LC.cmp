@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by Cvpcb (2015-04-22 BZR 5620)-product   date = 26/04/2015 16:51:34
+
+BeginCmp
+TimeStamp = /55327C19;
+Reference = IC1;
+ValeurCmp = 24LC128;
+IdModule  = Toadstool:SOIJ-8_5.3x5.3mm_Pitch1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511B90D;
+Reference = K1;
+ValeurCmp = CAP_CONN_LHS;
+IdModule  = Toadstool:Socket_Strip_Stackable_1x06;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511B5B6;
+Reference = K2;
+ValeurCmp = CAP_CONN_RHS;
+IdModule  = Toadstool:Socket_Strip_Stackable_1x06;
+EndCmp
+
+BeginCmp
+TimeStamp = /55327E0E;
+Reference = P1;
+ValeurCmp = A2_SEL;
+IdModule  = Toadstool:Pin_Header_Straight_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /553290E0;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55327DE3;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+EndListe
