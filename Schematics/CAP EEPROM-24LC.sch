@@ -152,8 +152,12 @@ F 1 "24LC128" H 3900 5610 40  0000 C CNN
 F 2 "Toadstool:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 3890 5550 35  0000 C CIN
 F 3 "" H 3900 5600 60  0000 C CNN
 F 4 "Microchip" H 3900 5600 60  0001 C CNN "Manufacturer"
-F 5 "24LC128" H 3900 5600 60  0001 C CNN "Mfg_Part_No"
-F 6 "-I/SN" H 3900 5600 60  0001 C CNN "Mfg_Package_Suffix"
+F 5 "24LC128-I/SN" H 3900 5600 60  0001 C CNN "Mfg_Part_No"
+F 6 "-" H 3900 5600 60  0001 C CNN "Mfg_Package_Suffix"
+F 7 "-" H 3900 5600 60  0001 C CNN "Alt_Manufacturer"
+F 8 "-" H 3900 5600 60  0001 C CNN "Alt_Mfg_Part_No"
+F 9 "-" H 3900 5600 60  0001 C CNN "Alt_Mfg_Package_Suffix"
+F 10 "-" H 3900 5600 60  0001 C CNN "Contract_Manuf_SKU"
 	1    3900 5600
 	1    0    0    -1  
 $EndComp

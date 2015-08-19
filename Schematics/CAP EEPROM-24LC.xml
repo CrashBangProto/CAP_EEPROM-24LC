@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>E:/OneDrive/KiCad Projects/Toadstool/CAP EEPROM-24LC/Schematics/CAP EEPROM-24LC.sch</source>
-    <date>15/05/2015 20:50:27</date>
+    <source>E:/OneDrive/KiCad Projects/Toadstool/CAP_EEPROM-24LC/Schematics/CAP EEPROM-24LC.sch</source>
+    <date>11/08/2015 14:55:32</date>
     <tool>Eeschema (2015-04-22 BZR 5620)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -54,8 +54,12 @@
       <footprint>Toadstool:SOIJ-8_5.3x5.3mm_Pitch1.27mm</footprint>
       <fields>
         <field name="Manufacturer">Microchip</field>
-        <field name="Mfg_Part_No">24LC128</field>
-        <field name="Mfg_Package_Suffix">-I/SN</field>
+        <field name="Mfg_Part_No">24LC128-I/SN</field>
+        <field name="Mfg_Package_Suffix">-</field>
+        <field name="Alt_Manufacturer">-</field>
+        <field name="Alt_Mfg_Part_No">-</field>
+        <field name="Alt_Mfg_Package_Suffix">-</field>
+        <field name="Contract_Manuf_SKU">-</field>
       </fields>
       <libsource lib="toadstool" part="24LC128"/>
       <sheetpath names="/" tstamps="/"/>
@@ -108,6 +112,38 @@
     </comp>
   </components>
   <libparts>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="toadstool" part="24LC128">
       <aliases>
         <alias>24AA128</alias>
@@ -115,7 +151,7 @@
       </aliases>
       <description>24LC128</description>
       <fields>
-        <field name="Reference">IC</field>
+        <field name="Reference">U</field>
         <field name="Value">24LC128</field>
         <field name="Footprint">DIP8</field>
       </fields>
@@ -168,48 +204,16 @@
         <pin num="6" name="RXD" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="CONN_01X03">
-      <footprints>
-        <fp>Pin_Header_Straight_1X03</fp>
-        <fp>Pin_Header_Angled_1X03</fp>
-        <fp>Socket_Strip_Straight_1X03</fp>
-        <fp>Socket_Strip_Angled_1X03</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="R">
-      <description>Resistor</description>
-      <footprints>
-        <fp>R_*</fp>
-        <fp>Resistor_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
     <library logical="device">
       <uri>C:\KiCad\kicad\share\library\device.lib</uri>
     </library>
-    <library logical="toadstool">
-      <uri>E:\OneDrive\KiCad Projects\Toadstool\Library\toadstool.lib</uri>
-    </library>
     <library logical="conn">
       <uri>C:\KiCad\kicad\share\library\conn.lib</uri>
+    </library>
+    <library logical="toadstool">
+      <uri>E:\OneDrive\KiCad Projects\Toadstool\Library\toadstool.lib</uri>
     </library>
   </libraries>
   <nets>

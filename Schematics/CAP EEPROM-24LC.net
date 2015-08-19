@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "E:/OneDrive/KiCad Projects/Toadstool/CAP EEPROM-24LC/Schematics/CAP EEPROM-24LC.sch")
-    (date "15/05/2015 20:50:19")
+    (source "E:/OneDrive/KiCad Projects/Toadstool/CAP_EEPROM-24LC/Schematics/CAP EEPROM-24LC.sch")
+    (date "28/05/2015 12:35:19")
     (tool "Eeschema (2015-04-22 BZR 5620)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -46,8 +46,12 @@
       (footprint Toadstool:SOIJ-8_5.3x5.3mm_Pitch1.27mm)
       (fields
         (field (name Manufacturer) Microchip)
-        (field (name Mfg_Part_No) 24LC128)
-        (field (name Mfg_Package_Suffix) -I/SN))
+        (field (name Mfg_Part_No) 24LC128-I/SN)
+        (field (name Mfg_Package_Suffix) -)
+        (field (name Alt_Manufacturer) -)
+        (field (name Alt_Mfg_Part_No) -)
+        (field (name Alt_Mfg_Package_Suffix) -)
+        (field (name Contract_Manuf_SKU) -))
       (libsource (lib toadstool) (part 24LC128))
       (sheetpath (names /) (tstamps /))
       (tstamp 55327C19))
@@ -91,6 +95,30 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 553290E0)))
   (libparts
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_01X03)
+      (footprints
+        (fp Pin_Header_Straight_1X03)
+        (fp Pin_Header_Angled_1X03)
+        (fp Socket_Strip_Straight_1X03)
+        (fp Socket_Strip_Angled_1X03))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X03))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))))
     (libpart (lib toadstool) (part 24LC128)
       (aliases
         (alias 24AA128)
@@ -138,38 +166,14 @@
         (pin (num 3) (name ~RESET) (type BiDi))
         (pin (num 4) (name VCC) (type power_out))
         (pin (num 5) (name SCL) (type BiDi))
-        (pin (num 6) (name RXD) (type BiDi))))
-    (libpart (lib conn) (part CONN_01X03)
-      (footprints
-        (fp Pin_Header_Straight_1X03)
-        (fp Pin_Header_Angled_1X03)
-        (fp Socket_Strip_Straight_1X03)
-        (fp Socket_Strip_Angled_1X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive)))))
+        (pin (num 6) (name RXD) (type BiDi)))))
   (libraries
     (library (logical device)
       (uri C:\KiCad\kicad\share\library\device.lib))
-    (library (logical toadstool)
-      (uri "E:\\OneDrive\\KiCad Projects\\Toadstool\\Library\\toadstool.lib"))
     (library (logical conn)
-      (uri C:\KiCad\kicad\share\library\conn.lib)))
+      (uri C:\KiCad\kicad\share\library\conn.lib))
+    (library (logical toadstool)
+      (uri "E:\\OneDrive\\KiCad Projects\\Toadstool\\Library\\toadstool.lib")))
   (nets
     (net (code 1) (name VCC)
       (node (ref K2) (pin 4))
